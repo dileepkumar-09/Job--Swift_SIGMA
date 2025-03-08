@@ -107,13 +107,10 @@ if st.button("Go to Cover Letter Generator"):
 
 
 st.header("Networking Email Generator")
-if st.button("Show Networking Email Generator"):
-    st.header("📧 Networking Email Generator")
-    purpose = st.text_area("Enter the purpose of networking email:")
-    if st.button("Generate Email"):
-        if purpose:
-            prompt_email = f"Generate a professional networking email for this purpose: {purpose}."
-            response_email = model.generate_content(prompt_email)
-            st.text_area("Generated Email:", response_email.text, height=200)
-        else:
-            st.warning("⚠ Please enter the purpose.")
+if st.button("Go to Networking Email Generator"):
+    st.markdown(
+        f"""
+        <a href="/networking_email" target="_self">Go to Networking Email Generator</a>
+        """,
+        unsafe_allow_html=True,
+    )
