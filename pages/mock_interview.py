@@ -82,7 +82,7 @@ if "feedback" in st.session_state and st.session_state["current_question"] > 0:
     user_response = st.session_state["answers"][idx]
     feedback = st.session_state["feedback"][idx]
 
-    st.write("### 📌 AI Feedback")
+    st.write("### Feedback")
     st.write(feedback)
 
 
