@@ -39,7 +39,7 @@ def find_company_website(company_name):
         st.error(f"An unexpected error occurred: {e}")
         return None
 
-st.header("🎯 AI-Powered Job Suggestions")
+st.header("Job Suggestions")
 uploaded_resume_jobs = st.file_uploader("Upload your resume (PDF format) for job recommendations", type=["pdf"], key="resume_jobs")
 preferred_jobs = st.text_area("Enter your preferred job roles (comma-separated):")
 
