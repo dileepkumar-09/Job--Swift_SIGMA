@@ -56,7 +56,7 @@ def create_cover_letter_pdf(your_name, company_name, cover_letter_text):
     return pdf_file_path
 
 st.set_page_config(page_title="AI-Powered Cover Letter Generator", layout="wide")
-st.title("📩 AI-Powered Cover Letter Generator")
+st.title("Cover Letter Generator")
 
 your_name = st.text_input("Enter your name:")
 company_name = st.text_input("Enter the company name:")
