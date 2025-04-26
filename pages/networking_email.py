@@ -4,9 +4,9 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyD1H-_G1QINMtBOEd1dqqrzU9BBu6AJlbI") # Replace with your actual API key
 model = genai.GenerativeModel('models/gemini-1.5-pro')
 
-st.set_page_config(page_title="📧 Networking Email Generator", layout="centered")
+st.set_page_config(page_title="Networking Email Generator", layout="centered")
 
-st.title("📧 Networking Email Generator")
+st.title("Networking Email Generator")
 
 purpose = st.text_area("Enter the purpose of your networking email:")
 
