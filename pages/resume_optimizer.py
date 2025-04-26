@@ -43,7 +43,7 @@ def generate_optimized_resume(resume_text, job_description):
     except Exception as e:
         return f"Error generating resume: {e}"
 
-st.set_page_config(page_title="📄 AI Resume Optimizer", layout="centered")
+st.set_page_config(page_title="Resume Optimizer", layout="centered")
 st.markdown("""
     <style>
         .stButton>button {
@@ -62,7 +62,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🚀 AI-Powered Resume Optimizer")
+st.title("Resume Optimizer")
 st.write("Enhance your resume to match the job description and improve your chances!")
 
 uploaded_resume = st.file_uploader("📂 Upload your resume (PDF format)", type=["pdf"])
